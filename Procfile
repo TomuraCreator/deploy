@@ -1,1 +1,1 @@
-web: java -jar build/libs/deploy-1.0-SNAPSHOT-all.jar
+web: java $JAVA_OPTS -Dserver.port=8080 -jar build/libs/deploy-1.0-SNAPSHOT-all.jar
