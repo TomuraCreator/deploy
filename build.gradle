@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+shadowJar  {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+task stage {
+    dependsOn DEFAULT_BUILD_DIR_NAME
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.github.pengrad:java-telegram-bot-api:5.7.0'
+}
