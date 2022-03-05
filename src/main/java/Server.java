@@ -4,7 +4,7 @@ import java.net.InetSocketAddress;
 
 public class Server {
 
-    public static final int PORT = 5000;
+    public static final int PORT = 8080;
 
     private final HttpServer server;
 
